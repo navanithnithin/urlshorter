@@ -9,10 +9,11 @@ const urlSchema = new mongooes.Schema({
         type: String,
         required: true,
     },
-    totelClicks: {
-        type: Number,
-    },
     visitHistory: [{ timestamp: { type: Number } }],
+    createdBy: {
+        type: mongooes.Schema.Types.ObjectId,
+        ref: 'users '
+    }
 
 },
     {

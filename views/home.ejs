@@ -8,13 +8,12 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
         }
     </style>
 </head>
 
 <body>
-    <h1>hi buddy</h1>
+    <h1>URL Shortener</h1>
     <% if (locals.id){ %>
         <p>URL Generated: <a style="color: blue;" target="_blank"
                 href="http://localhost:3001/url/<%= id %>">http://localhost:3001/url/<%= id %></a>
